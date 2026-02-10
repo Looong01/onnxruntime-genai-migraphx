@@ -45,7 +45,7 @@ def _download_ort(use_cuda: bool, use_rocm: bool, use_migraphx: bool, use_dml: b
     elif use_rocm:
         package_name = "Microsoft.ML.OnnxRuntime.Rocm"
     elif use_migraphx:
-        package_name = "Microsoft.ML.OnnxRuntime.Rocm"  # MIGraphX uses ROCm package
+        package_name = "Microsoft.ML.OnnxRuntime.MIGraphX"
     elif use_dml:
         package_name = "Microsoft.ML.OnnxRuntime.DirectML"
     else:
