@@ -106,6 +106,8 @@ include(cmake/global_variables.cmake)
 include(cmake/check_cuda.cmake)
 # Checking if ROCm is supported
 include(cmake/check_rocm.cmake)
+# Checking if MIGraphX is supported
+include(cmake/check_migraphx.cmake)
 # Checking if DML is supported
 include(cmake/check_dml.cmake)
 
