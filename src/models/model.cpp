@@ -24,6 +24,7 @@
 #include "../dml/interface.h"
 #include "../openvino/interface.h"
 #include "../ryzenai/interface.h"
+#include "../migraphx/interface.h"
 
 #if defined(_WIN32)
 #include <direct.h>
@@ -689,6 +690,9 @@ DeviceInterface* SetProviderSessionOptions(OrtSessionOptions& session_options,
     } else if (provider_options.name == "OpenVINO") {
       p_device = GetDeviceInterface(DeviceType::OpenVINO);
       OpenVINO_AppendProviderOptions(session_options, config, provider_options);
+    } else if (provider_options.name == "MIGraphX") {
+      p_device = GetDeviceInterface(DeviceType::MIGraphX);
+      MIGraphX_AppendProviderOptions(session_options, config, provider_options);
     } else if (provider_options.name == "RyzenAI") {
       p_device = GetDeviceInterface(DeviceType::RyzenAI);
 

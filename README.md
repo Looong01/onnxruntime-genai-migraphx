@@ -20,7 +20,7 @@ See documentation at the [ONNX Runtime website](https://onnxruntime.ai/docs/gena
 | API| Python <br/>C# <br/>C/C++ <br/> Java ^ | Objective-C ||
 | O/S | Linux <br/> Windows <br/>Mac  <br/>Android   || iOS |||
 | Architecture | x86 <br/> x64 <br/> arm64 ||||
-| Hardware Acceleration | CPU <br/> CUDA <br/> DirectML <br/> NvTensorRtRtx (TRT-RTX) <br/> OpenVINO <br/> QNN <br/> WebGPU | | AMD GPU |
+| Hardware Acceleration | CPU <br/> CUDA <br/> DirectML <br/> MIGraphX <br/> NvTensorRtRtx (TRT-RTX) <br/> OpenVINO <br/> QNN <br/> WebGPU | | AMD GPU (ROCm) |
 | Features | Multi-LoRA <br/> Continuous decoding <br/> Constrained decoding | | Speculative decoding |
 
 ^ Requires build from source
